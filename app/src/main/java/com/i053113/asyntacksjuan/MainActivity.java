@@ -46,13 +46,13 @@ public class MainActivity extends AppCompatActivity {
                 publishProgress(i);
             }
 
-            return "Fin del conteo JJfR";
+            return "...Fin del conteo JJfR";
         }
 
         @Override
         protected void onProgressUpdate(Integer... values) {
             int contador = values[0];
-            String text=  "Comienza el conteo JJf" + contador;
+            String text=  "..Comienza el conteo JJf.. -> " + contador;
             mtex.setText(text);
             mtex.setTextSize(contador);
         }
